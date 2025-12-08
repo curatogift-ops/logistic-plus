@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargo Plus - Logistics & Supply Chain Solutions</title>
+    <meta name="description"
+        content="Cargo Plus offers reliable logistics and supply chain solutions across India. Transport, warehousing, and last-mile delivery services for SMEs and businesses.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#hero" class="logo-link">
+                    <span class="logo-icon"><i class="fa-solid fa-truck-fast"></i></span>
+                    <span class="logo-text">Cargo Plus</span>
+                </a>
+            </div>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#why-us" class="nav-link">Why Us</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <!-- Mobile Only Buttons in Menu -->
+                <div class="mobile-cta">
+                    <a href="#contact" class="btn btn-primary sm-btn">Get a Quote</a>
+                </div>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:+919876543210" class="btn-icon header-phone">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+                <a href="#contact" class="btn btn-primary header-cta">Get a Quote</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-label">Fast • Reliable • Secure</span>
+                    <h1 class="hero-title">Your Logistics Chain, <br> <span class="highlight">Optimized.</span></h1>
+                    <p class="hero-subtitle">Cargo Plus delivers seamless logistics solutions across India. From
+                        warehousing to last-mile delivery, we move your business forward.</p>
+
+                    <div class="hero-highlights">
+                        <div class="highlight-chip"><i class="fa-solid fa-clock"></i> On-Time Delivery</div>
+                        <div class="highlight-chip"><i class="fa-solid fa-shield-halved"></i> Secure Handling</div>
+                        <div class="highlight-chip"><i class="fa-solid fa-map-location-dot"></i> Live Tracking</div>
+                    </div>
+
+                    <div class="hero-cta-group">
+                        <a href="#contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
+                        <a href="#services" class="btn btn-secondary btn-outline btn-lg">View Services</a>
+                    </div>
+                </div>
+                <!-- Optional: We can add an illustration/image on the right side for desktop if we want a split layout, 
+                     but for now keeping it centered/text-focused as per typical impactful hero sections -->
+            </div>
+        </section>
+
+        <!-- Tracking Demo Section -->
+        <section id="tracking-demo" class="section tracking-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="badge">Live Experience</span>
+                    <h2 class="section-title">See How We Track Your Cargo</h2>
+                    <p class="section-subtitle">Real-time visibility from pickup to delivery. Experience our transparent
+                        tracking system below.</p>
+                </div>
+
+                <div class="tracking-demo-card">
+                    <!-- Progress Tracker -->
+                    <div class="tracker-container">
+                        <div class="tracker-line">
+                            <div class="tracker-progress" id="tracker-progress"></div>
+                        </div>
+
+                        <div class="checkpoint active" data-step="1">
+                            <div class="point-dot"></div>
+                            <div class="point-info">
+                                <span class="point-time">10:00 AM</span>
+                                <span class="point-city">Bengaluru</span>
+                                <span class="point-status">Pickup</span>
+                            </div>
+                        </div>
+
+                        <div class="checkpoint" data-step="2">
+                            <div class="point-dot">
+                                <i class="fa-solid fa-truck-moving truck-icon"></i>
+                            </div>
+                            <div class="point-info">
+                                <span class="point-time">In Transit</span>
+                                <span class="point-city">On Road</span>
+                                <span class="point-status">Live GPS</span>
+                            </div>
+                        </div>
+
+                        <div class="checkpoint" data-step="3">
+                            <div class="point-dot"></div>
+                            <div class="point-info">
+                                <span class="point-time">Est. 10:00 AM</span>
+                                <span class="point-city">Mumbai</span>
+                                <span class="point-status">Delivery</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Live Metrics -->
+                    <div class="tracking-metrics">
+                        <div class="metric-card">
+                            <div class="metric-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                            <div class="metric-data">
+                                <span class="metric-value">98%</span>
+                                <span class="metric-label">On-Time Delivery</span>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+                            <div class="metric-data">
+                                <span class="metric-value">Live</span>
+                                <span class="metric-label">GPS Tracking</span>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon"><i class="fa-solid fa-file-signature"></i></div>
+                            <div class="metric-data">
+                                <span class="metric-value">e-POD</span>
+                                <span class="metric-label">Digital Proof</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="badge">Our Services</span>
+                    <h2 class="section-title">Logistics for Every Need</h2>
+                    <p class="section-subtitle">Comprehensive solutions tailored to your specific business requirements.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-truck-front"></i>
+                        </div>
+                        <h3 class="service-title">Road Transport</h3>
+                        <p class="service-desc">Reliable FTL & LTL truckload services with pan-India network coverage.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Pan-India Coverage</li>
+                            <li><i class="fa-solid fa-check"></i> Live Tracking</li>
+                            <li><i class="fa-solid fa-check"></i> Optimized Routes</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-warehouse"></i>
+                        </div>
+                        <h3 class="service-title">Warehousing</h3>
+                        <p class="service-desc">Secure storage solutions with inventory management and distribution.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Climate Control</li>
+                            <li><i class="fa-solid fa-check"></i> 24/7 Security</li>
+                            <li><i class="fa-solid fa-check"></i> Inventory Mgmt</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-motorcycle"></i>
+                        </div>
+                        <h3 class="service-title">Last-Mile Delivery</h3>
+                        <p class="service-desc">Fast and efficient delivery to the final customer's doorstep.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Same-Day Delivery</li>
+                            <li><i class="fa-solid fa-check"></i> E-commerce Ready</li>
+                            <li><i class="fa-solid fa-check"></i> COD Handling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section id="why-us" class="section why-us-section">
+            <div class="container">
+                <div class="why-us-content">
+                    <div class="why-us-text">
+                        <span class="badge">Why Choose Us</span>
+                        <h2 class="section-title">Trusted by Business Across India</h2>
+                        <p class="section-subtitle" style="margin-left: 0;">We define success by the reliability and
+                            efficiency we bring to your supply chain.</p>
+
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-stopwatch"></i></div>
+                                <div class="feature-text">
+                                    <h4>Real-Time Tracking</h4>
+                                    <p>Know exactly where your shipment is at any moment.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+                                <div class="feature-text">
+                                    <h4>Transparent Pricing</h4>
+                                    <p>No hidden charges. What you see is what you pay.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                                <div class="feature-text">
+                                    <h4>Dedicated Support</h4>
+                                    <p>Our team is available 24/7 to resolve any queries.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="why-us-stats">
+                        <div class="stat-box">
+                            <span class="stat-number">5K+</span>
+                            <span class="stat-label">Deliveries</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Cities</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">On-Time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <span class="badge">Get In Touch</span>
+                        <h2 class="section-title">Ready to Move Your Business?</h2>
+                        <p class="section-subtitle" style="margin-left: 0; margin-bottom: 2rem;">Request a free quote or
+                            contact us specifically for urgent logistics needs.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h5>Call Us Now</h5>
+                                    <a href="tel:+919876543210">+91 98765 43210</a>
+                                    <span class="note">24/7 Support Available</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h5>Email Us</h5>
+                                    <a href="mailto:info@cargoplus.in">info@cargoplus.in</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h5>Head Office</h5>
+                                    <p>123 Logistics Park, Transport Nagar,<br>Ahmedabad, Gujarat - 380001</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="quote-form">
+                            <h3>Request a Quote</h3>
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" name="phone" placeholder="+91 98765 43210" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>From City</label>
+                                    <input type="text" name="from_city" placeholder="Origin" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>To City</label>
+                                    <input type="text" name="to_city" placeholder="Destination" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Cargo Details</label>
+                                <textarea name="message" rows="3" placeholder="Weight, Type of goods, etc."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-btn">Request Quote</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo-link">
+                        <span class="logo-icon"><i class="fa-solid fa-truck-fast"></i></span>
+                        <span class="logo-text">Cargo Plus</span>
+                    </a>
+                    <p>Connecting businesses through reliable logistics and supply chain solutions across India.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Road Transport</a></li>
+                        <li><a href="#">Warehousing</a></li>
+                        <li><a href="#">Last Mile</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cargo Plus. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
