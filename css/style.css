@@ -731,6 +731,117 @@ button {
     font-size: 0.8rem;
 }
 
+/* Fleet Section */
+.fleet-section {
+    background-color: var(--white);
+}
+
+.fleet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.fleet-card {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    padding: 2.5rem;
+    border-radius: 16px;
+    text-align: center;
+    transition: var(--transition-base);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.fleet-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.fleet-card:hover::before {
+    transform: scaleX(1);
+}
+
+.fleet-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 102, 204, 0.15);
+    border-color: var(--primary-color);
+}
+
+.fleet-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), #0052a3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 2rem;
+    margin: 0 auto 1.5rem;
+    transition: var(--transition-base);
+}
+
+.fleet-card:hover .fleet-icon {
+    transform: scale(1.1) rotate(5deg);
+    background: linear-gradient(135deg, var(--secondary-color), #e65c00);
+}
+
+.fleet-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.fleet-desc {
+    color: var(--text-gray);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.fleet-features {
+    padding-top: 1.5rem;
+    border-top: 2px solid rgba(0, 102, 204, 0.1);
+    text-align: left;
+}
+
+.fleet-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.fleet-features li i {
+    color: var(--success);
+    font-size: 1rem;
+}
+
+/* Fleet Mobile Responsive */
+@media (max-width: 768px) {
+    .fleet-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .fleet-card {
+        padding: 2rem;
+    }
+}
+
 /* Why Us Section */
 .why-us-section {
     background-color: var(--white);
